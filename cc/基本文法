@@ -1,0 +1,103 @@
+//C++パッケージの呼び出し(先頭に必ず)
+#include <bits/stdc++.h>
+using namespace std;
+
+#define rep(i,n) for (int i=0;i<(n);i++)
+using ll = long long;
+using P = pair<int,int>;
+
+
+
+//基本動作
+int main(){
+
+	int i;
+    double d;
+    string s;
+    char c;
+    
+    bool b = true;
+    bool c =x < 10;
+    
+	cin >> x;
+	cout << x << endl;
+    
+    if (){
+    }
+    else if (){
+    }
+    else{
+    }
+    
+    int i = 0;
+    while(i < N){
+    i++
+    }
+    
+    for(int i = 0; i < N; i++){
+    }
+    
+    vector<int> a = {1,3,2,5}
+    for(int x:a){
+      cout << x << endl;
+    }
+    
+    for(int c:str
+
+}
+
+
+
+文字列変数.size()
+文字列変数.at(i)
+
+
+辞書順 0~9,A~Z,a~z
+string ""
+char ''
+改行 \n
+getline(cin,文字列変数);
+
+
+かつ	&& 
+または	||
+true	1
+false	0
+break	ぬける
+continue とばす
+
+//配列
+vector<型> vec(要素数,初期値);		//配列変数の宣言
+vec = {要素,要素,要素,..};	//値を代入
+vec.size()
+vec.at(i)
+vec.push_back();	//末尾に要素を追加
+vec.pop_back();		//末尾の要素を削除
+//int data[3];やarray<int,3> data;も同義
+
+//vectorに値を入れる
+for(int i=0;i<N;i++){cin >> mochi.at(i);}
+
+//vectorの出力チェック
+for(int i=0;i<N;i++){cout << chair.at(i)<<",";}cout<<endl;
+
+
+//オーバーフロー対策
+long long  #not int
+
+
+
+//繰り返しの回数が決まっていない時whileが向いている
+int main() {
+  int N;
+  cin >> N;
+  int count = 0;
+  while (N > 0) {
+    if (N % 2 > 0) {break;}
+    N = N / 2;
+    count++;
+  }
+  cout << count << endl;
+}
+//途中でbreakすることで回数のわからない繰り返しできる
+while(1){}

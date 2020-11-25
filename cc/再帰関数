@@ -1,0 +1,43 @@
+//sum
+int sum(int n){
+  //ベースケース
+  if (n==0){
+    return 0;
+  }
+  //再帰ステップ
+  int s = sum(n-1);
+  return s + n;
+}
+
+//sum_range
+int sum_range(int a, int b){
+  
+  if (a==b){return a;}
+  
+  return sum_range(a,b-1) + b;
+}
+
+//array_sum
+int array_sum_from_i(vector<int> &data,int i){
+    
+    if(i==data.size()){return 0;}
+    
+    int s = array_sum_from_i(data,i+1);
+    return data.at(i) +s;
+}
+    
+int array_sum(vector<int> &data){
+	return array_sum_from_i(data,0);
+}
+    
+//is_prime
+bool has_divisor(int N, int i){
+    if(i==N){return false;}
+    if(N%i==0){return true;}
+    return has_divesor(N,i+1);
+}
+bool is_prime(int N){
+    if(N==1){return false;}
+    else if(N==2){return true}
+    else{return !has_divisor(N,2);}
+}

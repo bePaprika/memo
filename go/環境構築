@@ -1,0 +1,90 @@
+	#goのインストール
+brew install go
+
+	#GOROOT(goのインストールパス)確認
+go env GOROOT
+
+	##パッケージインストール
+	#gore 対話環境
+go get githun.com/motemen/gore/cmd/gore 
+
+gore -autoimportを実行できない
+
+	# 一旦インストール済みの gore を削除
+$ go clean -i github.com/motemen/gore/cmd/gore
+
+	# GO111MODULE を on にして go get し直す
+	## GO111MODULE: Go modules を使うかどうかを制御するための環境変数
+$ env GO111MODULE=on go get github.com/motemen/gore/cmd/gore
+
+	#gocode gore上の入力補完
+go get githun.com/mdempsky/gocode
+
+	#pp APIドキュメント参照
+go get githun.com/k0kubun/pp
+
+	#ghq プロジェクト管理　
+brew install ghq
+	
+	#ghqを使う
+ghq list //ディレクトリないのリポジトリ一覧取得
+ghq get  //リモートリポジトリのソースコード取得
+	
+	#pecoをインストール インクリメンタルにフィルタするUI
+brew install peco
+	
+	#pecoを使う
+control+]
+入力確定すると指定ディレクトリに移動できる
+
+	#コマンドツールのインストール
+go get golang.org/x/tools/cmd/...
+
+	#依存のアップデート
+	#全体
+go get -u
+
+	#パッチレベル
+go get -u=patch
+
+	#個別
+go get -u example.com/path/to/pkg
+	
+	#依存の整頓
+go mod tidy
+
+	#エラー処理
+result, err := doSomething()
+if err != nil {
+		return err
+}
+
+	#文字列操作 =>stringパッケージ
+	 
+	#タイプ定義
+type data struct {
+		foo string
+		baz string
+}
+
+d := data{
+		foo: "bar",
+		baz: "qux",
+}
+
+	#ビルド
+go build
+
+	#動作しているGoroutineの数を取得
+runtime.NumGoroutine
+
+	#メモリやGCの状況を取得
+runtime.NumGoroutine
+
+
+
+
+	
+	
+
+

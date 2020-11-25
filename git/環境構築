@@ -1,0 +1,27 @@
+#初期設定-PCで初めてgitを使う時
+git config --global user.name "bePaprika"
+git config --global user.email "めあど"
+
+
+#ウェブ上でリポジトリ作成
+Repository nameを決める
+
+#git操作開始の合図
+git init
+-新しいgitリポジトリを作る時のみ
+
+
+#remoteを登録 #remote:共有のファイル置き場
+git remote add origin(リモート名) URL
+-リモートはリポジトリごとに作る？
+-名前はoriginでかぶってもいいの？
+
+
+#プッシュ先のリモートを指定(サイトに表示される)
+git remote add origin URL
+↓
+git add --all
+//git add ファイル名前
+git commit -m "メッセージ"
+↓
+git push -u origin master

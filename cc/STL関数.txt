@@ -1,0 +1,62 @@
+最小値/最大値
+min(a,b);
+min({a,b,c,d})
+max(a,b);
+max({a,b,c,d})
+*min_element(c+1,c+N+1);
+*max_element(c+1,c+N+1);
+
+絶対値
+abs(x); 
+
+交換
+swap(a,b);
+
+
+文字列探索
+S.find(string)	場所を表す数字を返す
+S.substr(l) 	l以降の部分文字列を返す
+S.substr(l, r)	lからr文字を返す
+
+
+ソート
+sort(vec.begin(), vec.end());
+reverse(vec.begin(), vec.end());
+	reverse(a + l, a + r)
+    
+スタック
+stack<int> a;
+a.push(x)
+a.pop()
+a.top()
+a.size()
+a.empty()
+
+
+
+sin(x)	double 型で返す sin(π/6) = 0.5
+cos(x)	double 型で返す cos(π/6) = 0.866025...
+tan(x)	double 型で返す tan(π/6) = 0.577350...
+
+	rand()
+	cout << rand() % 6 + 1 << endl;
+	//1 以上 6 以下のランダムな整数
+
+	最大公約数
+	__gcd(a, b) (__)
+	最小公倍数
+	a / __gcd(a, b) * b (__)
+	
+	
+	連想配列map
+	void countStrings(vector<string> s){
+		map<string, int> m;
+		for(int i=0; i<s.size(); i++){
+			m[s[i]]++;
+		}
+		map<string, int>::iterator it = m.begin();
+		while( it !=m.end() ){
+			cout << (*it).first << " " << (*it).second << endl;
+			++it;
+		}
+	}

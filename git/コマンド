@@ -1,0 +1,51 @@
+#ファイルを選択
+git add ファイル名
+git add --all #雑に全部上げる
+
+#変更メッセージ
+git commit -m "~~"
+
+
+#remoteにアップロード(プッシュ)
+git push origin(リモート名) master(ブランチ名)
+
+
+#remoteからダウンロード(プル)
+git pull origin(リモート名) master(ブランチ名)
+
+#pull = fetch + merge
+git fetch origin master
+git merge origin/master
+
+#maegeの取り消し
+git merge --abort
+
+#fetchの取り消し
+git reset --hard HEAD
+
+
+
+#変更したファイルを見る #変更後addされたファイル：緑、されていないファイル：赤
+git status
+
+
+#変更内容を見る #変更前：赤、変更後：緑
+git diff 
+
+
+#commit履歴の確認 #Auther/Date/messageが表示される #qで画面を終了
+git log
+
+
+#変更内容の履歴を見る #qで画面を終了
+git log -p
+
+
+#ヘッドの変更
+git checkout 行先コミットハッシュ
+
+#ブランチを切替
+git checkout ブランチ名
+
+#ブランチを作成
+git checkout -b ブランチ名

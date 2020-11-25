@@ -1,0 +1,74 @@
+ #type
+%T　
+ #value
+%v
+ #改行
+\n
+ #quote
+%q
+ #
+%g
+ #値が文字列
+%s
+ #値が数字
+%d
+ 
+
+fmt.Printf("書式\n",出力に用いる値)　//文末改行なし
+fmt.Println("") //文末改行あり
+
+
+
+var b int = 200
+b := 200
+
+#if文
+if
+else if 
+else
+
+#比較演算子
+<
+<=
+>
+>=
+==
+!=
+
+#条件式
+&&
+||
+
+#スイッチ文
+switch i {
+	case 0:fmt.Println("")
+	case f(),f():fmt.Println("") // ,で複数指定可能
+	default:fmt.Println("")
+}
+
+
+#for文
+for i:=1; i<=4; i++ {
+		fmt.Println("hello")
+}
+
+#乱数生成
+import "math/rand"
+import "time"
+rand.Seed(time.Now().Unix())
+fmt.Println(rand.Intn(10)) //0〜9の乱数
+
+#キー入力受け取り
+fmt.Scan(&変数名)
+
+#関数の定義
+func 関数名(変数名 型,変数名 型) {return }
+
+#変数のアドレス取得
+fmt.Println(&変数名)
+
+#ポインタ型変数の定義
+var namePtr *string = &name
+
+#ポインタに入っている値を見る
+fmt.Println(*namePtr)

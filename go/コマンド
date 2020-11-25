@@ -1,0 +1,32 @@
+	#フォーマット
+gofmt -w ファイル.go
+
+	#フォーマット + パッケージインポートの自動挿入/削除
+goimports -w ファイル.go
+
+	#危ういコード指摘
+go vet ファイル.go
+golint ファイル.go
+
+	#lintの設定
+golint -set_exit_status ./...
+golint -min_confidence=0.1 ./...
+
+	#ドキュメント閲覧
+go doc -all パッケージ名
+go doc -all github.com/motemen/gore
+
+	#変数名、関数名のリネーム
+gorename
+
+	#ソースコードの静的解析
+guru
+
+gopls
+gocode
+
+godef
+gotags
+analysis
+
+
