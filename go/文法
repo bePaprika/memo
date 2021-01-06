@@ -1,20 +1,22 @@
- #type
-%T　
- #value
-%v
- #改行
-\n
- #quote
-%q
- #
+
+
+
+year := 2018
+fmt.Printf("%T型：%v\n",year,year) //int型：2018
+fmt.Printf("%T型：%[1]v\n",year) //int型：2018
+
+%T //型を知る
+%v //value
+\n //改行
+%q //quote?
 %g
- #値が文字列
-%s
- #値が数字
-%d
+%s //値が文字列
+%d //値が数字
+%x //16進数で表示(0xなし)
+%b //整数値のbit表示
  
 
-fmt.Printf("書式\n",出力に用いる値)　//文末改行なし
+fmt.Printf("書式\n",出力に用いる値) //文末改行なし
 fmt.Println("") //文末改行あり
 
 
@@ -72,3 +74,4 @@ var namePtr *string = &name
 
 #ポインタに入っている値を見る
 fmt.Println(*namePtr)
+

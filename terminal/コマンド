@@ -43,6 +43,9 @@ rm -r 削除するディレクトリ名
 #ファイルへのテキストの追加
 echo "記載内容" >> ファイル名
 
+#ターミナル画面をリセット
+clear
+
 #ホームディレクトリの設定
 
 #vim教本
@@ -56,7 +59,7 @@ conda deactivate 名前
 conda env list  (baseやopencv-envが見える)
 conda list　(環境に入っているパッケージが見える)
 
-#パイソンを実行
+#実行
 python hoge.py
 R hoge.R
 
@@ -108,3 +111,8 @@ i
 
 #マニュアル
 man
+
+#ファイル名一覧をファイルに書き出す
+ls  > files.txt
+
+
